@@ -1,0 +1,13 @@
+runtime: python37
+entrypoint: gunicorn -b :$PORT main:app
+
+env_variables:
+  CLOUD_SQL_CONNECTION_NAME: composite-depot-240204:asia-northeast1:proken
+  DB_USER: root
+  DB_PASS: EG6UNGcJYSnEe7TEsSWu
+  DB_NAME: line
+  LINE_CHANNEL_ID: 1656027645
+  LINE_CHANNEL_SECRET: 90d5bf3fc98231e10527544770d3b35b
+  LINE_TOKEN: BKJEFKdbh2C7UBX6rvXWS7wSnQOxUP9CYEUZpNdMNnoIpuwvA1I+1LlerghTUnBTVWhh5mDGYBq5VPxNOpx59cWXQgThUUFVXv/h46nX6rv41z3omQz5TxGfWAI6kUFTTM/5F6asfbCvHr/fzc7VGAdB04t89/1O/w1cDnyilFU=
+
+service: proken-a-2021
